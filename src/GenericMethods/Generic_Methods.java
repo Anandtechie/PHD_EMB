@@ -87,9 +87,9 @@ public class Generic_Methods implements Iconstants {
 		try {
 			String aText = e.getText();
 			if (aText.equals(eText)) {
-				Reporter.log(methName+"   Page is displayed");
+				Reporter.log(methName+"     Page is displayed");
 			} else {
-				Reporter.log(methName+"   Page is not displayed");
+				Reporter.log(methName+"     Page is not displayed");
 				Assert.fail();
 			}
 		} catch (Exception e1) {
