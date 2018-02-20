@@ -14,12 +14,12 @@
       <![CDATA[Test failed  verifyClaimStatusSummaryDashlet]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="6533" started-at="2018-02-19T11:01:58Z" finished-at="2018-02-19T11:02:04Z">
+  <suite name="Suite" duration-ms="5944" started-at="2018-02-20T03:54:56Z" finished-at="2018-02-20T03:55:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="6533" started-at="2018-02-19T11:01:58Z" finished-at="2018-02-19T11:02:04Z">
+    <test name="Test" duration-ms="5944" started-at="2018-02-20T03:54:56Z" finished-at="2018-02-20T03:55:02Z">
       <class name="AllTestScripts.claimStatusSummaryDashlet">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:AllTestScripts.claimStatusSummaryDashlet@35f983a6]" name="openBrowser" is-config="true" duration-ms="6085" started-at="2018-02-19T16:31:58Z" finished-at="2018-02-19T16:32:04Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:AllTestScripts.claimStatusSummaryDashlet@35f983a6]" name="openBrowser" is-config="true" duration-ms="5511" started-at="2018-02-20T09:24:56Z" finished-at="2018-02-20T09:25:02Z">
           <reporter-output>
             <line>
               <![CDATA[Loaded the URL  https://192.168.10.249/index.html]]>
@@ -32,7 +32,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="verifyClaimStatusSummaryDashlet()[pri:0, instance:AllTestScripts.claimStatusSummaryDashlet@35f983a6]" name="verifyClaimStatusSummaryDashlet" duration-ms="31" started-at="2018-02-19T16:32:04Z" finished-at="2018-02-19T16:32:04Z">
+        <test-method status="FAIL" signature="verifyClaimStatusSummaryDashlet()[pri:0, instance:AllTestScripts.claimStatusSummaryDashlet@35f983a6]" name="verifyClaimStatusSummaryDashlet" duration-ms="27" started-at="2018-02-20T09:25:02Z" finished-at="2018-02-20T09:25:02Z">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[org.openqa.selenium.support.ui.WebDriverWait.until(Lcom/google/common/base/Function;)Ljava/lang/Object;]]>
@@ -74,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClaimStatusSummaryDashlet -->
-        <test-method status="FAIL" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:AllTestScripts.claimStatusSummaryDashlet@35f983a6]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-02-19T16:32:04Z" finished-at="2018-02-19T16:32:04Z">
+        <test-method status="FAIL" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:AllTestScripts.claimStatusSummaryDashlet@35f983a6]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-02-20T09:25:02Z" finished-at="2018-02-20T09:25:02Z">
           <params>
             <param index="0">
               <value>
@@ -136,15 +136,15 @@ Caused by: java.lang.ClassNotFoundException: org.apache.commons.io.FileUtils
         </test-method> <!-- closeBrowser -->
       </class> <!-- AllTestScripts.claimStatusSummaryDashlet -->
       <class name="AllTestScripts.demo">
-        <test-method status="SKIP" signature="openBrowser()[pri:0, instance:AllTestScripts.demo@5ebec15]" name="openBrowser" is-config="true" duration-ms="0" started-at="2018-02-19T16:32:04Z" finished-at="2018-02-19T16:32:04Z">
+        <test-method status="SKIP" signature="openBrowser()[pri:0, instance:AllTestScripts.demo@5ebec15]" name="openBrowser" is-config="true" duration-ms="0" started-at="2018-02-20T09:25:02Z" finished-at="2018-02-20T09:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="SKIP" signature="testing()[pri:0, instance:AllTestScripts.demo@5ebec15]" name="testing" duration-ms="0" started-at="2018-02-19T16:32:04Z" finished-at="2018-02-19T16:32:04Z">
+        <test-method status="SKIP" signature="testing()[pri:0, instance:AllTestScripts.demo@5ebec15]" name="testing" duration-ms="0" started-at="2018-02-20T09:25:02Z" finished-at="2018-02-20T09:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing -->
-        <test-method status="SKIP" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:AllTestScripts.demo@5ebec15]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-02-19T16:32:04Z" finished-at="2018-02-19T16:32:04Z">
+        <test-method status="SKIP" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:AllTestScripts.demo@5ebec15]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-02-20T09:25:02Z" finished-at="2018-02-20T09:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

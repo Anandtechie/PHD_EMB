@@ -134,6 +134,7 @@ public class IndexPage {
 			Assert.fail();
 		} catch (Exception e) {
 			Reporter.log("Login is passed", true);
+			Assert.fail();
 
 		}
 	}
