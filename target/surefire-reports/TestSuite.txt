@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 6.825 sec <<< FAILURE! - in TestSuite
+verifyClaimStatusSummaryDashlet(AllTestScripts.claimStatusSummaryDashlet)  Time elapsed: 0.039 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: org.openqa.selenium.support.ui.WebDriverWait.until(Lcom/google/common/base/Function;)Ljava/lang/Object;
+	at AllTestScripts.claimStatusSummaryDashlet.verifyClaimStatusSummaryDashlet(claimStatusSummaryDashlet.java:16)
+
+closeBrowser(AllTestScripts.claimStatusSummaryDashlet)  Time elapsed: 0.439 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/commons/io/FileUtils
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.io.FileUtils
+

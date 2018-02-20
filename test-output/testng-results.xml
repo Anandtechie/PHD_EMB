@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Loaded the URL  https://192.168.10.249/index.html]]>
+    </line>
+    <line>
+      <![CDATA[Started testing on  https://192.168.10.249/index.html]]>
+    </line>
+    <line>
+      <![CDATA[Implict wait time is  30]]>
+    </line>
+    <line>
+      <![CDATA[ clicked on practice page]]>
+    </line>
+    <line>
+      <![CDATA[Entered user name for practice account   Appa]]>
+    </line>
+    <line>
+      <![CDATA[Entered password for practice account  Welcome123]]>
+    </line>
+    <line>
+      <![CDATA[clicked on practice  page login button]]>
+    </line>
+    <line>
+      <![CDATA[Login is passed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Batch Status Tab]]>
+    </line>
+    <line>
+      <![CDATA[Batch Status page is displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="109365" started-at="2018-02-16T07:24:23Z" finished-at="2018-02-16T07:26:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="109365" started-at="2018-02-16T07:24:23Z" finished-at="2018-02-16T07:26:12Z">
+      <class name="AllTestScripts.demo">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:AllTestScripts.demo@402f32ff]" name="openBrowser" is-config="true" duration-ms="5476" started-at="2018-02-16T12:54:23Z" finished-at="2018-02-16T12:54:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Loaded the URL  https://192.168.10.249/index.html]]>
+            </line>
+            <line>
+              <![CDATA[Started testing on  https://192.168.10.249/index.html]]>
+            </line>
+            <line>
+              <![CDATA[Implict wait time is  30]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testing()[pri:0, instance:AllTestScripts.demo@402f32ff]" name="testing" duration-ms="102668" started-at="2018-02-16T12:54:28Z" finished-at="2018-02-16T12:56:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[ clicked on practice page]]>
+            </line>
+            <line>
+              <![CDATA[Entered user name for practice account   Appa]]>
+            </line>
+            <line>
+              <![CDATA[Entered password for practice account  Welcome123]]>
+            </line>
+            <line>
+              <![CDATA[clicked on practice  page login button]]>
+            </line>
+            <line>
+              <![CDATA[Login is passed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Batch Status Tab]]>
+            </line>
+            <line>
+              <![CDATA[Batch Status page is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testing -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:AllTestScripts.demo@402f32ff]" name="closeBrowser" is-config="true" duration-ms="1203" started-at="2018-02-16T12:56:11Z" finished-at="2018-02-16T12:56:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testing status=SUCCESS method=demo.testing()[pri:0, instance:AllTestScripts.demo@402f32ff] output= clicked on practice page]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- AllTestScripts.demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
