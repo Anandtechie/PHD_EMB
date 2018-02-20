@@ -6,5 +6,4 @@ public class ArchivePage {
 		System.out.println("Test Pushing");
 
 	}
-
 }
