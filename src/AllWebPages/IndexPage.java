@@ -34,6 +34,11 @@ public class IndexPage {
 	@FindBy(xpath = "//div[contains(text(),'invalid')]") // element to find whether error mgs is present is or not
 	private WebElement errMgs;
 
+	@FindBy(xpath = "//h3[text()='Practice Login']")
+	private WebElement pPracticeHeaderText;
+
+	@FindBy(xpath = "//h3[text()='Administrator Login']")
+	private WebElement AdminPageHeaderText;
 	SoftAssert sAssert = new SoftAssert();
 
 	String sETO = Generic_Methods.Get_Property("ETO");
@@ -57,6 +62,19 @@ public class IndexPage {
 		}
 	}
 
+	public void verifyPracticeLoginPageDisplayed() { // Going to index page and click on practice button
+														// to be verified whether the practice login
+														// page is displayed
+		try {
+			String eText = Generic_Methods.Get_cell_value("VerifiactionTextForAllPages", 9, 2);
+			Generic_Methods.verifyPageDisplayed(pPracticeHeaderText, eText, "Practice Login page header text");
+		} catch (Exception e) {
+			e.printStackTrace();
+			Assert.fail();
+		}
+
+	}
+
 	public void clickOnAdminLoginbuttonIndexpage(WebDriver driver) { // clicking on login for admin
 		try {
 			WebDriverWait w = new WebDriverWait(driver, ETO);
@@ -69,6 +87,18 @@ public class IndexPage {
 			sAssert.fail();
 			sAssert.assertAll();
 		}
+	}
+
+	public void verifyAdminLoginPageDisplayed() { // Verification of admin Login Page the text should be 'Administrator
+													// Login'
+		try {
+			String eText = Generic_Methods.Get_cell_value("VerifiactionTextForAllPages", 10, 2);
+			Generic_Methods.verifyPageDisplayed(AdminPageHeaderText, eText, "Admin Page Header");
+		} catch (Exception e) {
+			e.printStackTrace();
+			Assert.fail();
+		}
+
 	}
 
 	public void clickOnManagerLoginbuttonIndexpage(WebDriver driver) { // clicking on login for manager

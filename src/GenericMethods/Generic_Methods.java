@@ -12,10 +12,17 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.asserts.SoftAssert;
 
 public class Generic_Methods implements Iconstants {
+	static SoftAssert sAssert = new SoftAssert();
+	static String sETO = Generic_Methods.Get_Property("ETO");
+	static long ETO = Long.parseLong(sETO);
+
 	public static String Get_Property(String key) {
 		Properties p = new Properties();
 		String value = "";
@@ -83,13 +90,13 @@ public class Generic_Methods implements Iconstants {
 
 	}
 
-	public static void verifyPageDisplayed(WebElement e, String eText,String methName) {
+	public static void verifyPageDisplayed(WebElement e, String eText, String methName) {
 		try {
 			String aText = e.getText();
 			if (aText.equals(eText)) {
-				Reporter.log(methName+"      Page is displayed");
-			} else { 
-				Reporter.log(methName+"       Page is not displayed");
+				Reporter.log(methName + "      Page is displayed");
+			} else {
+				Reporter.log(methName + "       Page is not displayed");
 				Assert.fail();
 			}
 		} catch (Exception e1) {
@@ -97,6 +104,18 @@ public class Generic_Methods implements Iconstants {
 			Assert.fail();
 		}
 	}
-	
+
+	public static void clickOnElement(WebDriver driver, WebElement variable, String elepath) {
+		try {
+			WebDriverWait w = new WebDriverWait(driver, ETO);
+			w.until(ExpectedConditions.visibilityOf(variable));
+			variable.click();
+			Reporter.log("Clicked on the   " + variable.getText() + "   button   " + elepath);
+		} catch (Exception e) {
+			e.printStackTrace();
+			sAssert.fail();
+			sAssert.assertAll();
+		}
+	}
 
 }
