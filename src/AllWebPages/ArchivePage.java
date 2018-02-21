@@ -43,7 +43,7 @@ public class ArchivePage {
 		} catch (Exception e) {
 			e.printStackTrace();
 			sAssert.fail();
-			sAssert.assertAll(); //testing //testing// testing //testing
+			sAssert.assertAll(); 
 			
 		}
 	}
